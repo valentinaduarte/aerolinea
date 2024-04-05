@@ -16,6 +16,10 @@ public class Pasajero {
         this.documentoIdentidad = documentoIdentidad;
     }
 
+    public Pasajero() {
+
+    }
+
     public int getIdPasajero() {
         return idPasajero;
     }

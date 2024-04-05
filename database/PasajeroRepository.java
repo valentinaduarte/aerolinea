@@ -2,6 +2,7 @@ package database;
 
 import entities.Pasajero;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface PasajeroRepository {
@@ -11,7 +12,7 @@ public interface PasajeroRepository {
 
     boolean delete(Pasajero pasajero);
 
-    Pasajero findById(int idPasajero);
+    Pasajero findById(int idPasajero) throws SQLException;
 
     List<Pasajero> findAll();
 }
